@@ -10,7 +10,8 @@
   "author": "",
   "license": "ISC",
   "engines": {
-    "node": "12.22.5"
+    "node": "12.22.5",
+    "npm": "7.5.2"
   },
   "dependencies": {
     "@mapbox/mapbox-sdk": "^0.11.0",
