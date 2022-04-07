@@ -24,11 +24,13 @@ const userRoutes = require('./routes/users');
 
 const dbUrl = process.env.DB_URL || 'mongodb://localhost:27017/dhaba';
 
-mongoose.connect(dbUrl, {
-	useNewUrlParser: true,
-	useUnifiedTopology: true,
-	useCreateIndex: true
-});
+mongoose.connect(dbUrl, { useNewUrlParser: true, useUnifiedTopology: true });
+
+// mongoose.connect(dbUrl, {
+// 	useNewUrlParser: true,
+// 	useUnifiedTopology: true,
+// 	useCreateIndex: true
+// });
 
 const db = mongoose.connection;
 db.on('error', console.error.bind(console, 'connection error:'));
@@ -155,5 +157,5 @@ app.use((err, req, res, next) => {
 });
 
 app.listen(process.env.PORT || 3000, () => {
-	console.log(`Serving on port ${port}`);
+	console.log(`Serving on port ${process.env.PORT || 3000}`);
 });
