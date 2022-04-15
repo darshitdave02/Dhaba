@@ -1,5 +1,5 @@
 # Dhaba
-https://Dhaba.herokuapp.com/
+https://young-retreat-63641.herokuapp.com/restaurants
 
 A restaurant review webapp listing various restaurants added by different users. 
 
